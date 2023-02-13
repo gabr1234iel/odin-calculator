@@ -1,0 +1,116 @@
+*{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+
+.heading{
+    padding: 10px 5px;
+    font-size: 20px;
+    text-shadow: 1px 1px #a57777;
+    height:100px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.calculator-display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border:1px solid white;
+    margin:10px 10px;
+    padding-right:25px;
+    height:100px;
+    width:440px;
+    border-radius: 5px;
+    font-size: 3rem;
+}
+
+
+.calculator-keys .sec-one{
+    display: flex;
+    flex-direction: row;
+}
+
+.calculator-keys .sec-one .column-one{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.calculator-keys .sec-one .column-two{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px 10px;
+    height:100px;
+    width:100px;
+    background-color: black;
+    color: white;
+    border:1px solid white;
+    border-radius: 5px;
+    font-size: 3rem;
+    cursor: pointer; 
+}
+
+.row-one,
+.row-two,
+.row-three,
+.row-four{
+    display: flex;
+    flex-direction: row;
+}
+
+.sec-two{
+    display: flex;
+}
+
+.sec-two .key-equal{
+    flex:1;
+}
+
+.column-two .key-operator.is-depressed:hover{
+    color:white;
+    border-color: darkgreen;
+}
+.column-two button:hover{
+    color: green;
+    border-color: green;
+}
+
+.is-depressed{
+    background-color: green;
+}
+
+.column-one button:hover{
+    color: grey;
+    border-color: grey ;
+}
+
+.column-one .row-four [data-action="delete"]:hover{
+    color: red;
+    border-color: red;
+}
+
+.sec-two [data-action="clear-all"]:hover{
+    background-color: red;
+    font-weight: bolder;
+}
+
+.sec-two .key-equal:hover{
+    color: orange;
+    border-color: orange ;
+}

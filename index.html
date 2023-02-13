@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="heading">calculator by gabr1234iel</div>
+    <div class="calculator">
+        <div class="calculator-display">0</div>
+        <div class="calculator-keys">
+            <div class="sec-one">
+                <div class="column-one">
+                    <div class="row-one">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                    <div class="row-two">
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                    </div>
+                    <div class="row-three">
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                    </div>
+                    <div class="row-four">
+                        <button data-action="decimal">.</button>
+                        <button>0</button>
+                        <button class="key-backspace" data-action="delete">⏎</button>
+                    </div>
+                </div>
+    
+                <div class="column-two">
+                    <button class="key-operator" data-action="add">+</button>
+                    <button class="key-operator" data-action="minus">-</button>
+                    <button class="key-operator" data-action="multiply">×</button>
+                    <button class="key-operator" data-action="divide">÷</button>
+                </div>
+            </div>
+            <div class="sec-two">
+                <button data-action="clear-all">AC</button>
+                <button class="key-equal" data-action="calculate">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
